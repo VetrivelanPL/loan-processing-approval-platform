@@ -190,25 +190,6 @@ running application. Use a separate test database when existing
 demonstration records must be preserved. Test results must reflect
 actual execution.
 
-## Jira Project Management
-
-The `jira/` directory contains a starter backlog, import notes, and a
-project setup guide. Jira is used to organize tasks, manage sprint
-progress, record testing activities, and track reproducible defects. The
-live Jira workspace is maintained separately from the application source
-code.
-
-Defect records should include reproducible steps, expected and actual
-results, severity, and supporting evidence where available.
-
-## Documentation
-
-The `docs/` directory contains report content, evidence and submission
-checklists, test cases, a bug log template, a screenshot capture guide,
-validation status, source diagrams, and a report generation script.
-Final report files, application screenshots, Jira evidence, and the
-demonstration video are maintained separately from the source code.
-
 ## Data Model
 
 The application uses ten core entities: Customers, Loan Products,
