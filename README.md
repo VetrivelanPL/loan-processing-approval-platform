@@ -1,6 +1,6 @@
 # Loan Processing and Approval Platform
 
-A database-backed web application developed for the EXP-10 Software
+A database-backed web application developed for the Software
 Engineering project. The platform supports customer registration, loan
 product management, loan applications, document verification,
 eligibility assessment, approval decisions, and repayment tracking. The
