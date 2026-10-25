@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}Sign in | Loan Processing and Approval Platform{% endblock %}
+{% block content %}
+<div class="auth-layout register-layout">
+  <section class="form-card register-card login-card">
+    <h2>Sign in</h2>
+    <p class="muted login-subtitle">Choose your account type and enter your credentials.</p>
+
+    <div class="account-count-grid" aria-label="Registered account totals">
+      <div class="account-count"><strong>{{ account_counts['Customer'] }}</strong><span>Customer accounts</span></div>
+      <div class="account-count"><strong>{{ account_counts['Loan Officer'] }}</strong><span>Loan Officer accounts</span></div>
+      <div class="account-count"><strong>{{ account_counts['Administrator'] }}</strong><span>Administrator accounts</span></div>
+    </div>
+
+    <form method="post" id="login-form">
+      <label for="role">Account type</label>
+      <select id="role" name="role" required>
+        <option value="" disabled selected>Select your account type</option>
+        <option value="Customer">Customer</option>
+        <option value="Loan Officer">Loan Officer</option>
+        <option value="Administrator">Administrator</option>
+      </select>
+
+      <label for="email">Email address</label>
+      <input id="email" name="email" type="email" autocomplete="username" required placeholder="you@example.com">
+
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" autocomplete="current-password" required placeholder="Enter your password">
+
+      <button class="button primary full" type="submit">Sign in securely</button>
+    </form>
+    <p class="form-bottom">New customer? <a href="{{ url_for('register') }}">Create an account</a></p>
+  </section>
+</div>
+{% endblock %}

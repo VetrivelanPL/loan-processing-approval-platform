@@ -1,0 +1,44 @@
+
+# Python cache files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Uploaded documents
+uploads/
+
+# Private evidence and dummy test files
+Evidence_Screenshots/
+Dummy Proofs/
+
+# Local Selenium failure diagnostics
+selenium_failure.png
+selenium_login_failure.png
+
+# Draft reports: keep local until reviewed and finalized
+docs/EXP10_Report_Draft.docx
+docs/EXP10_Report_Draft.pdf
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+docs/EXP10_Report_Content.md
+docs/build_report.py
+
+docs/
+jira/
