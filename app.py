@@ -1,9 +1,4 @@
-"""Loan Processing and Approval Platform - academic demonstration application.
-
-Run locally with: python app.py
-The seeded accounts are for demonstration only. Change the SECRET_KEY and passwords
-before deploying anywhere outside a local academic environment.
-"""
+"""Loan Processing and Approval Platform - academic demonstration application."""
 from __future__ import annotations
 
 import csv
